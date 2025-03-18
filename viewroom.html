@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Rooms</title>
+    <link rel="stylesheet" href="viewrooms.css">
+</head>
+<body>
+    <header>
+        <a href="index.html"><h1 id="head">Receptionist Dashboard</h1></a>
+        
+        <nav>
+            <ul>
+                <li><a href="intro.html">About Team</a></li>
+                <li><a href="Tables.jpg">Tables</a></li>
+                <li><a href="ER Diagram.jpg">ER Diagrams</a></li>
+                <li><a href="DBMS REPORT.pdf">Project Report</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h2>View Room Occupancy</h2>
+    <form action="http://localhost:3000/viewrooms" method="GET">
+        <label for="roomNumber">Room Number:</label>
+        <input type="text" id="roomNumber" name="roomNumber">
+
+        <label for="roomType">Room Type:</label>
+        <select id="roomType" name="roomType">
+            <option value="">Select Room Type</option>
+            <option value="Standard">Standard</option>
+            <option value="Deluxe">Deluxe</option>
+            <option value="ICU">ICU</option>
+        </select>
+
+        <label for="dateOccupied">Date Occupied:</label>
+        <input type="date" id="dateOccupied" name="dateOccupied">
+
+        <button type="submit">Apply Filters</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Appointments</title>
+    <link rel="stylesheet" href="viewappointments.css">
+</head>
+<body>
+    <header>
+        <a href="index.html"><h1 id="head">Receptionist Dashboard</h1></a>
+        <nav>
+            <ul>
+                <li><a href="intro.html">About Team</a></li>
+                <li><a href="Tables.jpg">Tables</a></li>
+                <li><a href="ER Diagram.jpg">ER Diagrams</a></li>
+                <li><a href="DBMS REPORT.pdf">Project Report</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h2>View Appointments</h2>
+    <form action="http://localhost:3000/viewappointments" method="GET">
+        <label for="patientName">Patient Name:</label>
+        <input type="text" id="patientName" name="patientName"><br><br>
+
+        <label for="doctorName">Doctor Name:</label>
+        <input type="text" id="doctorName" name="doctorName"><br><br>
+
+        <label for="scheduleDate">Schedule Date:</label>
+        <input type="date" id="scheduleDate" name="scheduleDate"><br><br>
+
+        <input type="submit" value="Apply Filters">
+    </form>
+</body>
+</html>

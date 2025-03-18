@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Appointments</title>
+    <link rel="stylesheet" href="addbills.css">
+</head>
+<body>
+    <header>
+        <a href="index.html"><h1 id="head">Receptionist Dashboard</h1></a>
+        <nav>
+            <ul>
+                <li><a href="intro.html">About Team</a></li>
+                <li><a href="Tables.jpg">Tables</a></li>
+                <li><a href="ER Diagram.jpg">ER Diagrams</a></li>
+                <li><a href="DBMS REPORT.pdf">Project Report</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h2>Add Bills</h2>
+    <form action="http://localhost:3000/addbill" method="POST">
+        <label for="patientId">Patient ID:</label><br>
+        <input type="text" id="patientId" name="patientId"><br><br>
+
+        <label for="patientName">Patient Name:</label><br>
+        <input type="text" id="patientName" name="patientName"><br><br>
+
+        <label for="billDate">Bill Date:</label><br>
+        <input type="date" id="billDate" name="billDate"><br><br>
+
+        <label for="totalAmount">Total Amount:</label><br>
+        <input type="text" id="totalAmount" name="totalAmount"><br><br>
+
+        <label for="paymentStatus">Payment Status:</label><br>
+        <select id="paymentStatus" name="paymentStatus">
+            <option value="Paid">Paid</option>
+            <option value="Pending">Pending</option>
+        </select><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

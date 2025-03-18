@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Appointments</title>
+    <link rel="stylesheet" href="addprescriptions.css">
+</head>
+<body>
+    <header>
+        <a href="index.html"><h1 id="head">Receptionist Dashboard</h1></a>
+        <nav>
+            <ul>
+                <li><a href="intro.html">About Team</a></li>
+                <li><a href="Tables.jpg">Tables</a></li>
+                <li><a href="ER Diagram.jpg">ER Diagrams</a></li>
+                <li><a href="DBMS REPORT.pdf">Project Report</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h2>Add Prescriptions</h2>
+    <form action="http://localhost:3000/addprescriptions" method="POST">
+        <label for="patientId">Patient ID:</label><br>
+        <input type="text" id="patientId" name="patientId"><br>
+
+        <label for="patientId">Patient Name:</label><br>
+        <input type="text" id="patientName" name="patientName"><br>
+
+        <label for="doctorId">Doctor ID:</label><br>
+        <input type="text" id="doctorId" name="doctorId"><br>
+
+        <label for="datePrescribed">Date Prescribed:</label><br>
+        <input type="date" id="datePrescribed" name="datePrescribed"><br>
+
+        <label for="medication">Medication:</label><br>
+        <input type="text" id="medication" name="medication"><br>
+
+        <label for="dosage">Dosage:</label><br>
+        <input type="text" id="dosage" name="dosage"><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

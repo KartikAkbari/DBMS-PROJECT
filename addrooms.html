@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Appointments</title>
+    <link rel="stylesheet" href="addprescriptions.css">
+</head>
+<body>
+    <header>
+        <a href="index.html"><h1 id="head">Receptionist Dashboard</h1></a>
+        <nav>
+            <ul>
+                <li><a href="intro.html">About Team</a></li>
+                <li><a href="Tables.jpg">Tables</a></li>
+                <li><a href="ER Diagram.jpg">ER Diagrams</a></li>
+                <li><a href="DBMS REPORT.pdf">Project Report</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h2>Add Room Occupancy</h2>
+    <form action="http://localhost:3000/addrooms" method="POST">
+        <label for="patientId">Patient ID:</label><br>
+        <input type="text" id="patientId" name="patientId"><br>
+
+        <label for="roomNumber">Room Number:</label><br>
+        <input type="text" id="roomNumber" name="roomNumber"><br>
+
+        <label for="roomType">Room Type:</label><br>
+        <select id="roomType" name="roomType">
+            <option value="Standard">Standard</option>
+            <option value="Deluxe">Deluxe</option>
+            <option value="ICU">ICU</option>
+        </select><br>
+
+        <label for="dateOccupied">Date Occupied:</label><br>
+        <input type="date" id="dateOccupied" name="dateOccupied"><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
